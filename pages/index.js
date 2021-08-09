@@ -1,6 +1,7 @@
 import * as S from '../styles/Styles'
 import Link from 'next/link'
 import Style from '../styles/Style.module.css'
+import CardProfile from '../components/Card-Profile'
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
             <Link href="/"><a>Contact</a></Link>
             </ul>
           </nav>
-          <h1>FRONT END JUNIOR DEVELOPER</h1> 
+          <h1>FRONT END JUNIOR DEVELOPER</h1>
+          <h2>.HTML | CSS | JavaScript | React js </h2> 
+          <CardProfile/>
       </main>
       <S.Header>
       </S.Header>
