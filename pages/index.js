@@ -16,7 +16,7 @@ export default function Home() {
             </ul>
           </nav>
           <h1>FRONT END JUNIOR DEVELOPER</h1>
-          <h2>.HTML | CSS | JavaScript | React js </h2> 
+          <h2>.Next Js | Styled Component | Firebase | Contentful CMS </h2> 
           <CardProfile/>
       </main>
       <S.Header>
