@@ -5,7 +5,9 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
+        background-color: #EEEEEE;
     }
 
     main {
@@ -14,8 +16,8 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         position: absolute;
-        z-index: 5;
         width: 100vw;
+        height: auto;
         align-items: center;
     }
 
@@ -44,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         
-        width: 200px;
+        width: 400px;
         font-weight: 300;
         font-size: 1rem;
     }

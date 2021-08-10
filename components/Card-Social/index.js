@@ -7,7 +7,7 @@ export default function CardSocial(){
     "https://www.linkedin.com/in/andrenas"
     "https://github.com/andre17nas"
 
-    <p> Copyright &copy; 2021 - André Nas. Todos os Direitos Reservados</p>
+    
     */
 
     return(
