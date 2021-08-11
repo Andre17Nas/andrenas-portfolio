@@ -10,7 +10,7 @@ export default function Portfolio({props}){
         <S.CardWrapper>
             {
                 props.map((project) => (
-                    <a href={project.fields.link} target='_blank' rel='norefer'>     
+                    <a href={project.fields.link} target='_blank' rel='norefer' key={project.sys.id}>     
                         <S.PortfolioCard>
                             <span>{project.fields.name}</span>               
                         </S.PortfolioCard>
