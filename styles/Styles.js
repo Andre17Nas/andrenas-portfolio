@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+/*
+    #222831 - Black 1
+    #393E46 - black 2
+    #00ADB5
+    #EEEEEE
+    */
+
 export const MainWrapper = styled.div`
     margin: 0;
     padding: 0;
@@ -64,28 +71,42 @@ export const PortfolioWrapper = styled.div`
     }
 `
 export const CardWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr;
+    margin-top: 40px;
+
+    a{
+        text-decoration: none;
+        color: #222831;
+    }
 `
 
 export const PortfolioCard = styled.div`
-    width: 225px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: #FFF;
+    /*
     box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.2);
-    margin-left: 20px;
+    */
+    margin: 4px;
     display: flex;
     flex-direction: column;
-
-
+    justify-content: center;
+    text-align: center;
 
     span {
         padding: 5px;
+        /*
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 215px;
+        */
+    }
+
+    &:hover{
+        background-color: #00ADB5;
+        color: #FFF;
+        transition: 1s;
     }
 `
 
@@ -97,7 +118,12 @@ export const LinkedinIconStyled = styled(FontAwesomeIcon)`
 ` 
 export const GithubIconStyled = styled(FontAwesomeIcon)`
     &:hover{
-        /**/
+        /*
+            #222831 - Black 1
+            #393E46 - black 2
+        */
+        
+        color: #222831;
         transition: 1s;
     }
 `
