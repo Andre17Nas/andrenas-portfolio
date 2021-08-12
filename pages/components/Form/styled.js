@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { ToastContainer } from 'react-toastify'
+
 export const FormWrapper = styled.form`
     display: flex;
     flex-direction: column;
@@ -46,5 +48,7 @@ export const FormButton = styled.button`
         color: #00ADB5;
         border: 3px solid #EEEEEE;
         transition: 1s;
+        cursor: pointer;
     }
 `
+

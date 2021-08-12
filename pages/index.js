@@ -2,20 +2,21 @@ import React, {useState} from 'react'
 import * as S from '../styles/Styles'
 import Link from 'next/link'
 import Style from '../styles/Style.module.css'
-import CardProfile from '../components/Card-Profile'
-import Portfolio from '../components/Portfolio'
+import CardProfile from './components/Card-Profile'
+import Portfolio from './components/Portfolio'
 import {createClient} from 'contentful'
-import Modal from '../components/Modal'
+import Modal from './components/Modal'
+import { ToastContainer } from 'react-toastify'
 
 export default function Home({projects}) {
 
-  //console.log(projects)
   const [showModal, setShowModal] = useState(false)
 
   return (
     <S.MainWrapper>
       <S.Header/> 
       <main>
+      <ToastContainer/>
           <nav className={Style.Navbar}>
             <ul>
             <Link href="/"><a>Home</a></Link>
@@ -34,7 +35,6 @@ export default function Home({projects}) {
           </S.Footer>
           <Modal onClose={()=> setShowModal(false)} show={showModal}/>
       </main>  
-      
     </S.MainWrapper>
   )
 }

@@ -1,4 +1,4 @@
-import * as S from '../../styles/Styles'
+import * as S from '../../../styles/Styles'
 import { createClient } from 'contentful'
 import Link from 'next/link'
 

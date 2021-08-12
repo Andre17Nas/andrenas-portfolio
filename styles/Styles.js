@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ToastContainer } from 'react-toastify'
 
 /*
     #222831 - Black 1
@@ -130,5 +131,10 @@ export const WhatsappIconStyled = styled(FontAwesomeIcon)`
     }
 `
 /*
-********** Modal
+********** testesl
 */
+
+export const ToastContainerStyled = styled(ToastContainer)`
+ position: absolute;
+ z-index: 10;
+` 
