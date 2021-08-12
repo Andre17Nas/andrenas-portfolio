@@ -1,13 +1,16 @@
+import React, {useState} from 'react'
 import * as S from '../styles/Styles'
 import Link from 'next/link'
 import Style from '../styles/Style.module.css'
 import CardProfile from '../components/Card-Profile'
 import Portfolio from '../components/Portfolio'
 import {createClient} from 'contentful'
+import Modal from '../components/Modal'
 
 export default function Home({projects}) {
 
-  console.log(projects)
+  //console.log(projects)
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <S.MainWrapper>
@@ -17,7 +20,7 @@ export default function Home({projects}) {
             <ul>
             <Link href="/"><a>Home</a></Link>
             <Link href="/"><a>Portfolio</a></Link>
-            <Link href="/"><a>Contact</a></Link>
+            <Link href="/"><a onClick={()=> setShowModal(true)}>Contact</a></Link>
             </ul>
           </nav>
           <h1>FRONT END JUNIOR DEVELOPER</h1>
@@ -29,7 +32,9 @@ export default function Home({projects}) {
           <S.Footer>
             <p> Copyright &copy; 2021 - André Nas. Todos os Direitos Reservados</p>
           </S.Footer>
+          <Modal onClose={()=> setShowModal(false)} show={showModal}/>
       </main>  
+      
     </S.MainWrapper>
   )
 }

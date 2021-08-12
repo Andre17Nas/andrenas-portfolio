@@ -16,7 +16,6 @@ export const MainWrapper = styled.div`
     width: 100%;
     height: 100vh;
 `
-
 export const Header = styled.div`
     /*
     #222831
@@ -32,7 +31,6 @@ export const Header = styled.div`
     margin-left: -500px;
 `
 export const Navbar = styled.nav`
-
 `
 export const SocialWrapper = styled.div`
     display: flex;
@@ -80,7 +78,6 @@ export const CardWrapper = styled.div`
         color: #222831;
     }
 `
-
 export const PortfolioCard = styled.div`
     width: 150px;
     height: 150px;
@@ -109,7 +106,6 @@ export const PortfolioCard = styled.div`
         transition: 1s;
     }
 `
-
 export const LinkedinIconStyled = styled(FontAwesomeIcon)`
     &:hover{
         color: #2867B2;
@@ -133,3 +129,6 @@ export const WhatsappIconStyled = styled(FontAwesomeIcon)`
         transition: 1s;
     }
 `
+/*
+********** Modal
+*/
