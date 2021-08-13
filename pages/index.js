@@ -33,7 +33,7 @@ export default function Home({projects}) {
             <Portfolio props={projects}/>
           </div>          
           <S.DownloadCV>
-            <a href="https://drive.google.com/file/d/1Dx5JvSYUh9X5tpdyFov6Kjc9m38JBTpw/view?usp=sharing" target="_blank"><FontAwesomeIcon icon={faCloudDownloadAlt} size="2x"/></a>
+            <a href="https://drive.google.com/file/d/1Dx5JvSYUh9X5tpdyFov6Kjc9m38JBTpw/view?usp=sharing" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCloudDownloadAlt} size="2x"/></a>
             <span>Baixar meu CV</span>
           </S.DownloadCV>
           <S.Footer> 
