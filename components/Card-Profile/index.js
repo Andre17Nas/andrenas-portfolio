@@ -1,5 +1,5 @@
 import * as S from './styled'
-import ProfileImage from '../../../styles/ProfileImage'
+import ProfileImage from '../../styles/ProfileImage'
 import CardSocial from '../Card-Social'
 
 export default function CardProfile(){

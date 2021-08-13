@@ -1,5 +1,5 @@
 import { faGithubAlt, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import * as S from '../../../styles/Styles'
+import * as S from '../../styles/Styles'
 
 export default function CardSocial(){
 
