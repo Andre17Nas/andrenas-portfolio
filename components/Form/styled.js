@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { ToastContainer } from 'react-toastify'
-
 export const FormWrapper = styled.form`
     display: flex;
     flex-direction: column;
@@ -15,7 +13,7 @@ export const FormInput = styled.input`
     padding-left: 4px;
     width: 400px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border: none;
     border-bottom: 2px solid #EEEEEE;
 

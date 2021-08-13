@@ -10,8 +10,6 @@
     z-index: 5;
     line-height: 30px;   
     margin-left: 300px;
-    
-    
 
 }
 
@@ -24,7 +22,7 @@
 
 .Navbar ul a:hover{
     border-bottom: 4px solid #00ADB5;
-
+    cursor: pointer;
 }
 
 /*

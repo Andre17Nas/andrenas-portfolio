@@ -35,7 +35,3 @@ export const ModalHeader = styled.div`
 export const ModalBody = styled.div`
     padding-top: 10px;
 `
-
-export const ModalForm = styled.div`
-
-`

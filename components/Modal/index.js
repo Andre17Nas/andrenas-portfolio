@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Form from '../Form';
 import * as S from "./styled";
 
-const Modal = ({show, onClose, chieldren, title}) =>{
+const Modal = ({show, onClose}) =>{
     const [isBrowser, setIsBrowser] = useState(false)
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Modal = ({show, onClose, chieldren, title}) =>{
         <S.ModalOverlay>
             <S.ModalWrapper>
                 <S.ModalHeader>
-                    {title}<span onClick={handleCloseClick}>X</span>
+                    <span onClick={handleCloseClick}>X</span>
                 </S.ModalHeader>
                 <S.ModalBody>
                     <Form/>
@@ -38,4 +38,4 @@ const Modal = ({show, onClose, chieldren, title}) =>{
     }
 }
 
-export default Modal
+export default Modal;

@@ -42,8 +42,9 @@ export const SocialWrapper = styled.div`
 export const Footer = styled.div`
     display: flex;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 100px;
     bottom: 0 ;
+
 
     p {
         width: 600px;
@@ -134,7 +135,13 @@ export const WhatsappIconStyled = styled(FontAwesomeIcon)`
 ********** testesl
 */
 
-export const ToastContainerStyled = styled(ToastContainer)`
- position: absolute;
- z-index: 10;
+export const DownloadCV = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    align-items: center;
+
+    a {
+        color: #393E46;
+    }
 ` 
