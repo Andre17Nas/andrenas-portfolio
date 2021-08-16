@@ -4,8 +4,8 @@ import CardSocial from '../Card-Social'
 
 export default function CardProfile(){
     return(
-        <S.ProfileWrapper>
-            <ProfileImage src="/image/img.jpg" width="200px" height="200px"/>
+        <S.ProfileWrapper >
+            <ProfileImage src="/image/img.jpg" width="200px" height="200px" id="section-home"/>
             <h3>ANDRÉ NAS</h3>
             <p>Eae! meu nome é André do Nascimento Barroso, sou formado em Ciência da Computação e sou apaixonado por desenvolvimento Web. 
             Estou em busca de me tornar especialista na Area em alguns anos. <br/>

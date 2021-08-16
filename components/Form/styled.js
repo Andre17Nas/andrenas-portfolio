@@ -7,6 +7,9 @@ export const FormWrapper = styled.form`
     width: 500px;
     height: 400px;
     
+    @media(max-width: 768px){
+        width: 400px;
+    }
 `
 export const FormInput = styled.input`
     margin: 10px;
@@ -20,6 +23,7 @@ export const FormInput = styled.input`
     &:focus{
         outline: 2px solid #EEEEEE;
     }
+
 `
 export const FormTextArea = styled.textarea`
     margin: 10px;

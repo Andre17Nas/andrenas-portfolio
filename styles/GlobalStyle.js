@@ -11,15 +11,24 @@ const GlobalStyle = createGlobalStyle`
     }
 
     main {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         display: flex;
         flex-direction: column;
         position: absolute;
         width: 100vw;
-        height: auto;
+        height: 100vh;
         align-items: center;
+
+    /* TABLET VERSION */
+    @media only screen and (max-width: 768px){
+        width: 100vw;
+        
     }
+
+
+    }
+
 
     h1 {
         font-style: normal;
@@ -36,6 +45,13 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 200;
         font-size: 1.5rem;
         color: #FFF;
+
+        /* TABLET VERSION */
+        @media only screen and (max-width: 768px){
+            width: 100vw;
+            padding: 20px;
+            text-align: center;
+        }
     }
 
     h3 {

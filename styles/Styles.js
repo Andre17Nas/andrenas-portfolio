@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ToastContainer } from 'react-toastify'
 
 /*
     #222831 - Black 1
@@ -10,13 +9,22 @@ import { ToastContainer } from 'react-toastify'
     */
 
 export const MainWrapper = styled.div`
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100vh; 
+
+
+    /* TABLET VERSION */
+    @media only screen and (max-width: 768px){
+        
+    }
+
+
 `
+
 export const Header = styled.div`
     /*
     #222831
@@ -25,14 +33,23 @@ export const Header = styled.div`
     #EEEEEE
     */
     margin: 0;
-    width: 2000px;
-    height: 400px;
+    width: 100vw;
+    height: 450px;
     background-color: #222831; 
-    transform: rotate(-23.5deg);
-    margin-left: -500px;
+    transform: skewY(-23deg);
+    margin-top: -100px;
+
+    /* PHONE VERSION */
+    @media only screen and (max-width: 360px){
+        
+    }
+
+    /* TABLET VERSION */
+    @media only screen and (max-width: 768px){
+
+    }
 `
-export const Navbar = styled.nav`
-`
+
 export const SocialWrapper = styled.div`
     display: flex;
     flex-direction: row;
@@ -69,6 +86,13 @@ export const PortfolioWrapper = styled.div`
         letter-spacing: 0.49em;
         color: #222831;
     }
+
+    /* TABLET VERSION */
+    @media only screen and (max-width: 768px){
+        h1{
+            font-size: 2.5rem;
+        }
+    }
 `
 export const CardWrapper = styled.div`
     display: grid;
@@ -78,6 +102,18 @@ export const CardWrapper = styled.div`
     a{
         text-decoration: none;
         color: #222831;
+    }
+
+     /* PHONE VERSION */
+     @media only screen and (max-width: 360px){
+        
+    }
+
+    /* TABLET VERSION */
+    @media only screen and (max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 50px;
     }
 `
 export const PortfolioCard = styled.div`
@@ -130,6 +166,7 @@ export const WhatsappIconStyled = styled(FontAwesomeIcon)`
         color: #4AC959;
         transition: 1s;
     }
+
 `
 /*
 ********** testesl
@@ -145,3 +182,4 @@ export const DownloadCV = styled.div`
         color: #393E46;
     }
 ` 
+
