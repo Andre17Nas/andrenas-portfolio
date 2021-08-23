@@ -10,16 +10,16 @@ export const NavbarStyled = styled.nav`
     float: right;
     z-index: 5;
     line-height: 60px;   
-    margin: 0 auto;
     justify-content: center;
     width: 100vw;
 
     /* TABLET VERSION */
-    @media only screen and (max-width: 768px){
+    @media (max-width: 768px){
+        margin: 0 auto;   
         position: fixed;
         display: block;
-        z-index: 15;
-        background-color: #FFF;
+        z-index: 15;      
+        width: 100%;
         
     }
 `
@@ -29,15 +29,20 @@ export const UlStyled = styled.ul`
     display: flex;
     justify-content: flex-end;
 
+    @media(max-width: 360px){
+        margin: 0;
+        width: 100%;
+        font-size: 2rem;
+    }
+
     /* TABLET VERSION */
-    @media only screen and (max-width: 768px){
+    @media(max-width: 768px){
         display: none;
         flex-direction: column;
         background-color: #FFF;
         align-items: center;
         justify-content: center;
-        line-height: 150px;
-        
+        line-height: 150px;    
         color: #000;
     }
 `
@@ -84,13 +89,21 @@ export const CheckboxStyled = styled.input`
 `
 export const LabelStyled = styled.label`
     display: none;
+    background-color: #FFF;
+    float: right;
+    border-radius: 4px;
+    opacity: 0.5;
     
+    @media(max-width: 360px){
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        
+    }
 
     /* TABLET VERSION */
-    @media only screen and (max-width: 768px){ 
-        padding: 10px;
-        margin-right: 30px;
-        display: flex;
-        float: right;
+    @media(max-width: 768px){ 
+        padding: 20px;
+        display: flex;   
     }
 `

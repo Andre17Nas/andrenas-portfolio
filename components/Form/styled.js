@@ -6,6 +6,10 @@ export const FormWrapper = styled.form`
     align-items: center;
     width: 500px;
     height: 400px;
+
+    @media(max-width: 360px){
+        width: 300px;
+    }
     
     @media(max-width: 768px){
         width: 400px;
@@ -24,6 +28,10 @@ export const FormInput = styled.input`
         outline: 2px solid #EEEEEE;
     }
 
+    @media(max-width: 360px){
+        width: 300px;
+    }
+
 `
 export const FormTextArea = styled.textarea`
     margin: 10px;
@@ -34,6 +42,10 @@ export const FormTextArea = styled.textarea`
     justify-content: baseline;
     border: 2px solid #EEEEEE;
     outline: #393E46;
+
+    @media(max-width: 360px){
+        width: 300px;
+    }
 `
 
 export const FormButton = styled.button`

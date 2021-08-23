@@ -5,6 +5,7 @@ export default function Portfolio({props}){
     return(
         <S.PortfolioWrapper>
             <h1>* Portfolio *</h1>
+        
         <S.CardWrapper>
             {
                 props.map((project) => (
@@ -15,7 +16,7 @@ export default function Portfolio({props}){
                     </a> 
                 )
                 )}       
-          </S.CardWrapper>
+          </S.CardWrapper>       
           </S.PortfolioWrapper>
     )
 }
