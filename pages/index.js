@@ -21,8 +21,8 @@ export default function Home({projects}) {
             <Portfolio props={projects}/>
           </main>          
           <S.DownloadCV>
-            <a href="https://drive.google.com/file/d/1Dx5JvSYUh9X5tpdyFov6Kjc9m38JBTpw/view?usp=sharing" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCloudDownloadAlt} size="2x"/></a>
-            <span>Baixar meu CV</span>
+            <a href="https://drive.google.com/file/d/1sUpBIlEyT79LLWsIW9KpR-SB9LBYNIbl/view" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCloudDownloadAlt} size="2x"/></a>
+            <span>Baixe meu CV</span>
           </S.DownloadCV>
           <S.Footer> 
             <p> Copyright &copy; 2021 - André Nas. Todos os Direitos Reservados</p>
